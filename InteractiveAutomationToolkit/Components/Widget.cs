@@ -196,7 +196,7 @@
 		/// Gets or sets the value of the 'data-cy' attribute of the dma-automation-grid-component element used to display the widget in HTML.
 		/// Note: it is only be possible to use this DebugTag in web, this will not be added when running IAS in cube.
 		/// </summary>
-		public string DebugTag
+		public virtual string DebugTag
 		{
 			get
 			{
