@@ -33,6 +33,15 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Skyline.DataMiner.Dev.Automation" Version="10.4.1.2" />
+		<PackageReference Include="Skyline.DataMiner.Dev.Common" Version="10.4.6.2" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Reference Include="SLAnalyticsTypes">
+			<HintPath>..\dlls\SLAnalyticsTypes.dll</HintPath>
+		</Reference>
+		<Reference Include="SLManagedAutomation">
+			<HintPath>..\dlls\SLManagedAutomation.dll</HintPath>
+		</Reference>
 	</ItemGroup>
 </Project>
