@@ -1,34 +1,26 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFramework>net462</TargetFramework>
-    <CodeAnalysisRuleSet>InteractiveAutomationToolkitTests.ruleset</CodeAnalysisRuleSet>
-    <IsPackable>false</IsPackable>
-    <PlatformTarget>x86</PlatformTarget>
-  </PropertyGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\InteractiveAutomationToolkit\InteractiveAutomationToolkit.csproj" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="stylecop.json" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="coverlet.collector" Version="3.2.0">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-    <PackageReference Include="FluentAssertions" Version="6.8.0" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.4.1" />
-    <PackageReference Include="Moq" Version="4.18.3" />
-    <PackageReference Include="MSTest.TestAdapter" Version="2.2.10" />
-    <PackageReference Include="MSTest.TestFramework" Version="2.2.10" />
-    <PackageReference Include="Skyline.DataMiner.Dev.Common" Version="10.4.6.2" />
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="SLAnalyticsTypes">
-      <HintPath>..\dlls\SLAnalyticsTypes.dll</HintPath>
-    </Reference>
-    <Reference Include="SLManagedAutomation">
-      <HintPath>..\dlls\SLManagedAutomation.dll</HintPath>
-    </Reference>
-  </ItemGroup>
+	<PropertyGroup>
+		<TargetFramework>net462</TargetFramework>
+		<CodeAnalysisRuleSet>InteractiveAutomationToolkitTests.ruleset</CodeAnalysisRuleSet>
+		<IsPackable>false</IsPackable>
+		<PlatformTarget>x86</PlatformTarget>
+	</PropertyGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\InteractiveAutomationToolkit\InteractiveAutomationToolkit.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="stylecop.json" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="coverlet.collector" Version="3.2.0">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="FluentAssertions" Version="6.8.0" />
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.4.1" />
+		<PackageReference Include="Moq" Version="4.18.3" />
+		<PackageReference Include="MSTest.TestAdapter" Version="2.2.10" />
+		<PackageReference Include="MSTest.TestFramework" Version="2.2.10" />
+		<PackageReference Include="Skyline.DataMiner.Dev.Automation" Version="10.4.7" />
+	</ItemGroup>
 </Project>

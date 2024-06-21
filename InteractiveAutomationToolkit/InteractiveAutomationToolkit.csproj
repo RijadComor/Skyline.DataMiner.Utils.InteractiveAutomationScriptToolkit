@@ -15,33 +15,21 @@
 		<PackageProjectUrl>https://skyline.be/</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/SkylineCommunications/Skyline.DataMiner.Utils.InteractiveAutomationScriptToolkit</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
-		<Description>Quickly develop Interactive Automation Scripts in DataMiner 10.4.1 and up.</Description>
+		<Description>Quickly develop Interactive Automation Scripts in DataMiner 10.4.7 and up.</Description>
 		<PackageIcon>Icon.png</PackageIcon>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
-		<Version>8.0.1</Version>
+		<Version>9.0.1</Version>
 	</PropertyGroup>
-
 	<ItemGroup>
 		<None Include="..\README.md" Pack="true" PackagePath="" />
 		<None Include="..\LICENSE.txt" Pack="true" PackagePath="" />
 		<None Include="nuget\Icon.png" Pack="true" PackagePath="" />
 		<None Include="stylecop.json" />
 	</ItemGroup>
-
 	<ItemGroup>
 		<InternalsVisibleTo Include="$(MSBuildProjectName)Tests" />
 	</ItemGroup>
-
 	<ItemGroup>
-		<PackageReference Include="Skyline.DataMiner.Dev.Common" Version="10.4.6.2" />
-	</ItemGroup>
-
-	<ItemGroup>
-		<Reference Include="SLAnalyticsTypes">
-			<HintPath>..\dlls\SLAnalyticsTypes.dll</HintPath>
-		</Reference>
-		<Reference Include="SLManagedAutomation">
-			<HintPath>..\dlls\SLManagedAutomation.dll</HintPath>
-		</Reference>
+		<PackageReference Include="Skyline.DataMiner.Dev.Automation" Version="10.4.7" />
 	</ItemGroup>
 </Project>
