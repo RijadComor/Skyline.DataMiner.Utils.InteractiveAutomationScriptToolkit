@@ -155,6 +155,20 @@
 			CurrentDialog.Show(false);
 		}
 
+		/// <summary>
+		/// Hides current dialog.
+		/// </summary>
+		/// <exception cref="InvalidOperationException">When no dialog has been set.</exception>
+		public void Hide()
+		{
+			if (CurrentDialog == null)
+			{
+				throw new InvalidOperationException("No dialog has been set");
+			}
+
+			CurrentDialog.Hide();
+		}
+
 		private void RunManualAction()
 		{
 			isManualModeRequested = false;

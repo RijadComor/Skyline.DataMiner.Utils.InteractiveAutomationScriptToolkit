@@ -608,6 +608,14 @@
 		}
 
 		/// <summary>
+		/// Hides the dialog window.
+		/// </summary>
+		public void Hide()
+		{
+			Engine.HideUI();
+		}
+
+		/// <summary>
 		/// Removes all widgets from the dialog.
 		/// </summary>
 		public void Clear()
