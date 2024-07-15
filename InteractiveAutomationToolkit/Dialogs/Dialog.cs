@@ -608,7 +608,8 @@
 		}
 
 		/// <summary>
-		/// Hides the dialog window.
+		/// Hides the dialog. This does not block any background logic from running.
+		/// Use <see cref="Show"/> if you want to show the dialog again.
 		/// </summary>
 		public void Hide()
 		{

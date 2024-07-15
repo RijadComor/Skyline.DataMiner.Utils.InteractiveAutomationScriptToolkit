@@ -156,17 +156,12 @@
 		}
 
 		/// <summary>
-		/// Hides current dialog.
+		/// Hides the UI. This does not block any background logic from running.
+		/// Use <see cref="ShowDialog" /> if you want to show the UI again.
 		/// </summary>
-		/// <exception cref="InvalidOperationException">When no dialog has been set.</exception>
 		public void Hide()
 		{
-			if (CurrentDialog == null)
-			{
-				throw new InvalidOperationException("No dialog has been set");
-			}
-
-			CurrentDialog.Hide();
+			Engine.HideUI();
 		}
 
 		private void RunManualAction()
